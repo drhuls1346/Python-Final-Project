@@ -1,0 +1,20 @@
+Daniel Hulsey
+7/28/2014
+Python Final Project Proposal
+Vertical Separation Calculator
+	  Recently, Dr. Sharma and I have been flying a series of drone flights over the UNG Gainesville campus. 
+	Safety has been our main concern so we have been looking into the flight patterns associated with the 
+	Gainesville Airport. We’ve discovered that the campus lies directly on the approach path for Gainesville 
+	Airport’s runway 5. We knew that we were close but we didn’t realize that it went right through the campus. 
+	So now the question is how much vertical separation should we have between approaching aircraft and the 
+	drone at the altitudes that we have been flying. 
+	  Approach patterns are published by the FAA on documents called approach plates and are easily attainable
+  over the internet. I attained the approach plate for runway 5 and calculated by hand that we have plenty
+	of vertical separation. The calculation takes a lot of variables but it is not too complicated. It requires 
+	trigonometry so I will be importing the math module for this program. 
+	  The user will input the location and altitude of the initial approach fix, the location and elevation of 
+	the touch down zone, the glide path angle, and the location and altitude of the drone. The program will 
+	output a distance in feet of the vertical distance between the drone and the flight path at the drone’s 
+	location. Locations will be input in degrees minutes seconds format, split into a list with the .split() 
+	method, then recalculated into decimal degrees format using the equation (degrees + minutes/60 + seconds/3600).
+	Once in decimal degrees format, the distance formula will be used.
