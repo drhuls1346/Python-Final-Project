@@ -9,7 +9,7 @@ Vertical Separation Calculator
 	So now the question is how much vertical separation should we have between approaching aircraft and the 
 	drone at the altitudes that we have been flying. 
 	  Approach patterns are published by the FAA on documents called approach plates and are easily attainable
-  over the internet. I attained the approach plate for runway 5 and calculated by hand that we have plenty
+  	over the internet. I attained the approach plate for runway 5 and calculated by hand that we have plenty
 	of vertical separation. The calculation takes a lot of variables but it is not too complicated. It requires 
 	trigonometry so I will be importing the math module for this program. 
 	  The user will input the location and altitude of the initial approach fix, the location and elevation of 
