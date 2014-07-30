@@ -24,10 +24,10 @@ def vert_sep():
     northing_distance_ft = (abs(float(iaf_northing_dd) - float(drone_northing_dd))) * 364320
     distance_ft = ((float(easting_distance_ft) ** 2.0) + (float(northing_distance_ft) ** 2.0)) ** (1/2.0)
     tdze = raw_input("Enter the elevation of the touch down zone in feet. ex 1276 :")
-    iaf_alt = raw_input("Enter the altitude of the initial approach fix in feet. ex 3100 :")
+    iaf_alt = raw_input("Enter the altitude above mean sea level of the initial approach fix in feet. ex 3100 :")
     gsa = raw_input("Enter the glide slope angle in degrees. ex 3.00 :")
     study_area_elevation = raw_input("Enter the elevation of the location that the drone will fly in feet. ex. 1162 :")
-    drone_alt = raw_input("Enter the altitude that the drone will fly in feet. ex 270 :")
+    drone_alt = raw_input("Enter the altitude above ground level that the drone will fly in feet. ex 270 :")
     adjactnt_side = float(iaf_alt) - float(tdze)
     alt_above_tdze = (math.tan(math.radians(float(gsa)))) * float(distance_ft)
     elevation_diff = float(tdze) - float(study_area_elevation)
