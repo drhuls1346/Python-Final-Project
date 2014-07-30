@@ -9,7 +9,8 @@ def vert_sep():
     """This function collects all of the coordinates and elevations necessary to calculate the vertical separation between a drone being flown under
     an established approach path, runs all of the calculations, and prints the separation in feet. All coordinates are entered by the user in degrees
     minutes seconds format with no special characters. Degrees minutes and seconds are separated with spaces. All elevations and altitudes are entered
-    in feet. The approach path glide slope angle is entered in degrees."""
+    in feet. The approach path glide slope angle is entered in degrees. The example coordinates, elevations, and altitudes are
+    for Gainesville Runway 5 ILS and RNAV approaches."""
     drone_northing_dms = raw_input("Enter the northing of the location that the drone will fly in DMS format. ex. 34 14 21.25 :")
     drone_northing_dd = dms_to_dd(drone_northing_dms)
     drone_easting_dms = raw_input("Enter the easting of the location that the drone will fly in DMS format. ex. 83 52 1.75 :")
